@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api TablaPeriodica</title>
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href= "css/index.css">
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <header class="has-background-warning">
+        <h1 class="has-text-black-bis has-text-centered py-3 is-size-2 is-size-3-mobile">Api-Tabla periódica</h1>
+    </header>
+
+    <div class="container px-5">
+        <main>
+            <p class="is-size-4 is-size-6-mobile">
+                Mi primera API funcional usando JavaScript y Express que solo usa el metodo HTTP GET. La idea de mi proyecto surgió al conocer que
+                Bill Gates tiene montada en la pared de su oficina
+                una tabla periodica gigante con muestras o representaciones de todos los elementos quimicos.
+            </p>
+        </main>
+        <h2 class="is-size-2 has-text-info is-bold">Rutas</h2>
+        <section>
+
+            <article>
+                <h3 class="is-size-3 is-size-5-mobile has-text-info">/todos</h3>
+                <p class="is-size-4 is-size-6-mobile">
+                    Regresa un JSON con todos los elementos de la tabla periódica.
+                </p>
+            </article>
+
+            <article class="mt-4">
+                <h3 class="is-size-3 is-size-5-mobile has-text-info">/simbolo/&lt;simbolodelelemento&gt;</h3>
+                <p class="is-size-4 is-size-6-mobile">
+                    Regresa un solo elemento de la tabla periódica. Por ejemplo, si deseara buscar el elemento cobre su
+                    consulta debería ser <span class="has-text-info">/simbolo/Cu</span>
+                </p>
+            </article>
+
+            <article class="mt-4">
+                <h3 class="is-size-3 is-size-5-mobile has-text-info">/electrones/&lt;numerolectrones&gt;</h3>
+                <p class="is-size-4 is-size-6-mobile">
+                    Regresa un solo elemento de la tabla periódica. Si desea buscar el elemento que posea 79 como número
+                    atómico su consulta debería ser <span class="has-text-info">/electrones/79</span>
+                </p>
+            </article>
+
+
+            <article class="mt-4">
+                <h3 class="is-size-3 is-size-5-mobile has-text-info">/serie/&lt;nombredeserie&gt;</h3>
+                <p class="is-size-4 is-size-6-mobile">
+                    Regresa un JSON con los elementos de la tabla periódica que concuenden con esa serie química.
+                </p>
+                <p class="has-text-info is-size-4 is-size-6-mobile">
+                    No metales
+                </p>
+                <p class="has-text-success">
+                   <a class="has-text-primary is-size-4 is-size-6-mobile" href="https://api-tabla-express.herokuapp.com/serie/nometales" target="blanck">/serie/nometales</a>
+                </p>
+                <div class="border"></div>
+                <!--  -->
+                <p class="has-text-info is-size-4 is-size-6-mobile">
+                    Metaloides
+                </p>
+                <p>
+                    <a class="has-text-primary is-size-4 is-size-6-mobile" href="https://api-tabla-express.herokuapp.com/serie/metaloides" target="blanck">/serie/metaloides</a>
+                </p>
+                <div class="border"></div>
+                <p class="has-text-info is-size-4 is-size-6-mobile">
+                    Metales alcalinos
+                </p>
+                <p>
+                    <a class="has-text-primary is-size-4 is-size-6-mobile" href="https://api-tabla-express.herokuapp.com/serie/metalesalcalinos" target="blanck">/serie/metalesalcalinos</a>
+                </p>
+                <div class="border"></div>
+                <p class="has-text-info is-size-4 is-size-6-mobile">
+                    Metales alcalinoterreos
+                </p>
+                <p>
+                    <a class="has-text-primary is-size-4 is-size-6-mobile" href="https://api-tabla-express.herokuapp.com/serie/metalesalcalinoterreos" target="blanck">/serie/metalesalcalinoterreos</a>
+                </p>
+                <div class="border"></div>
+                <p class="has-text-info is-size-4 is-size-6-mobile">
+                    Metales de transición
+                </p>
+                <p>
+                    <a class="has-text-primary is-size-4 is-size-6-mobile" href="https://api-tabla-express.herokuapp.com/serie/metalesdetransicion" target="blanck">/serie/metalesdetransicion</a>
+                </p>
+                <div class="border"></div>
+                <p class="has-text-info is-size-4 is-size-6-mobile">
+                    Metales del bloque p
+                </p>
+                <p>
+                    <a class="has-text-primary is-size-4 is-size-6-mobile" href="https://api-tabla-express.herokuapp.com/serie/metalesbloquep" target="blanck">/serie/metalesbloquep</a>
+                </p>
+                <div class="border"></div>
+                <p class="has-text-info is-size-4 is-size-6-mobile">
+                    Gases nobles
+                </p>
+                <p>
+                    <a class="has-text-primary is-size-4 is-size-6-mobile" href="https://api-tabla-express.herokuapp.com/serie/gasesnobles" target="blanck">/serie/gasesnobles</a>
+                </p>
+                <div class="border"></div>
+                <p class="has-text-info is-size-4 is-size-6-mobile">
+                    Halogenos
+                </p>
+                <p>
+                    <a class="has-text-primary is-size-4 is-size-6-mobile" href="https://api-tabla-express.herokuapp.com/serie/halogenos" target="blanck">/serie/halogenos</a>
+                </p>
+                <div class="border"></div>
+            </article>
+        </section>
+    </div>
+    <footer class="has-background-warning has-text-centered mt-3 py-2 has-text-black-bis is-size-5 is-size-6-mobile">Creado por J.S.Solezzi - 2022</footer>
+</body>
+</html>
