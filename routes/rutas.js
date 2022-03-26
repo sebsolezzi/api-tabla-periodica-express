@@ -6,16 +6,16 @@ const funciones = require('../funciones');
 router.get('/',funciones.renderIndex);
 
 //regresa todos los elementos de la tabla perdiódica
-router.get('/todos',funciones.returnElementos);
+router.get('/api/todos',funciones.returnElementos);
 
 //regresa elementos de una serie espesifica
-router.get('/serie/:nombreserie',funciones.returnPorSerie);
+router.get('/api/serie/:nombreserie',funciones.returnPorSerie);
 
 //regresa un solo elemento que cumpla con el número de electrones
-router.get('/electrones/:numeroelectrones',funciones.returnNumeroElectrones);
+router.get('/api/electrones/:numeroelectrones',funciones.returnNumeroElectrones);
 
 //regresa un solo elemento que cumpla con el simbolo enviado
-router.get('/simbolo/:simbolo',funciones.returnPorSimbolo);
+router.get('/api/simbolo/:simbolo',funciones.returnPorSimbolo);
 
 //regresa no disponible para cualquier otra ruta q ingrese el usuario
 router.get('*',(req,res)=>{
